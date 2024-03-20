@@ -68,7 +68,11 @@ ul {
 
 /* SECTIONS */
 
-section {
+.jumbotron {
+    background-color: #FFFBF7;
+}
+
+.container {
   padding-top: 8vh;
   padding-bottom: 8vh;
   min-height: 100vh;
@@ -78,12 +82,7 @@ section {
     min-height: 100vh;
 }
 
-#about {
-    background-color: #FFFBF7;
-}
-
 #contact {
-    background-color: #FFFBF7;
     min-height: 30vh;
 }
 
