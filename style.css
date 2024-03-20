@@ -56,17 +56,27 @@ p {
     color: #404040C2
 }
 
-ul {
+.list-section ul {
     list-style-type: none;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
     font-size: 1.25em;
-    font-variation-settings:
-    "slnt" 0;
-    line-height: 3;
+    font-variation-settings: "slnt" 0;
+    line-height: 3.5;
     color: #404040C2
+}
+
+.list-section ul li {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.list-section ul li::before {
+  content: url('./assets/check-circle.svg');
+  height: 50px; width: 50px;
+  transform: translatex(-30%);
 }
 
 .profile_pic {
