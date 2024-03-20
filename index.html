@@ -10,34 +10,28 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<section id="profile">
+	<section class="container mx-auto" id="profile">
 		<header class="introduction">
-			<img class="profile_pic" src="./assets/kp_portrait.png">
+			<img class="profile_pic rounded-circle" src="./assets/kp_portrait.png">
 			<br>
-			<h2 class="industry">
-				INDUSTRY
-			</h2>
-			<h1 class="greeting"> 
-				Hi, I'm Kat Pasalo
-			</h1>
-	      <button
-	        class="icon-btn icon-btn-color"
-	        onclick="location.href='#about'"
-	      >
-					<svg class="icon-svg" width="56" height="56" fill="none" viewBox="0 0 24 24">
-					  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 13.75L12 19.25L6.75 13.75"/>
-					  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 18.25V4.75"/>
-					</svg>
-	      </button>
+			<h2 class="industry">TITLE</h2>
+			<h1 class="greeting">Hi, I'm Kat Pasalo!</h1>
+      <button class="icon-btn icon-btn-color" onclick="location.href='#about'">
+				<svg class="icon-svg" width="56" height="56" fill="none" viewBox="0 0 24 24">
+				  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 13.75L12 19.25L6.75 13.75"/>
+				  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 18.25V4.75"/>
+				</svg>
+      </button>
 		</header>
 	</section>
-	<section id="about">
-		<h2 class="industry">
-			GET TO KNOW MORE
-		</h2>
+
+
+	<section class="container" id="about">
+		<h2 class="industry">GET TO KNOW MORE</h2>
 		<h1 class="title">About Me</h1>
 		<p>I'm passionate about gaming and bring a mix of tech skills and creativity to the table. With a background in enterprise-scale machine learning applications and a genuine love for gaming since childhood, my goal is to leverage my expertise to craft immersive experiences that captivate players and push the boundaries of interactive entertainment.</p>
 		<ul>
@@ -47,25 +41,27 @@
 			<li>B.S. Computer Science & Engineering</li>
 		</ul>
 		<br>
-	    <div class="btn-container">
-	      <button
-	        class="btn btn-color"
-	        onclick="window.open('./assets/kpasalo_cv.pdf')"
-	      >
-	      	<span>See My CV</span>
-	        <svg width="24" height="24" fill="none" class="arrow-right" viewBox="0 0 24 24">
-						<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.75 6.75L19.25 12L13.75 17.25"/>
-						<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 12H4.75"/>
-					</svg>
-	      </button>
-	    </div>	
+    <div class="row">
+      <button class="btn btn-color col-auto me-auto" onclick="window.open('./assets/kpasalo_cv.pdf')">
+      	<span>See My CV</span>
+        <svg width="24" height="24" fill="none" class="arrow-right" viewBox="0 0 24 24">
+					<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.75 6.75L19.25 12L13.75 17.25"/>
+					<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 12H4.75"/>
+				</svg>
+      </button>
+    
+	    <button class="icon-btn icon-btn-color col-auto" onclick="location.href='#projects'">
+				<svg class="icon-svg" width="56" height="56" fill="none" viewBox="0 0 24 24">
+				  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 13.75L12 19.25L6.75 13.75"/>
+				  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 18.25V4.75"/>
+				</svg>
+	    </button>
+	  </div>
 	</section>
 
 
-	<section id="projects">
-		<h2 class="industry">
-			BROWSE MY RECENT
-		</h2>
+	<section class="container" id="projects">
+		<h2 class="industry">BROWSE MY RECENT</h2>
 		<h1 class="title">Projects</h1>
 		<p>My strong background in music made it easy to transition to the world of game audio. I love using sound to make the gaming experience immersive and cohesive throughout different genres.</p>
 		<ul>
@@ -73,23 +69,30 @@
 			<li>Audio Implementation</li>
 			<li>Mixing & Mastering</li>
 		</ul>
-		<div class="btn-container">
-	      <button
-	        class="btn btn-color"
-	        onclick="window.open('./assets/resume-example.pdf')"
-	      >
-	        <span>Showreels</span>
-	        <svg width="24" height="24" fill="none" class="arrow-right" viewBox="0 0 24 24">
-						<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.75 6.75L19.25 12L13.75 17.25"/>
-						<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 12H4.75"/>
-					</svg>
-	      </button>
-	    </div>	
+
+    <div class="row">
+      <button class="btn btn-color col-auto me-auto" onclick="window.open('./assets/kpasalo_cv.pdf')">
+      	<span>See My CV</span>
+        <svg width="24" height="24" fill="none" class="arrow-right" viewBox="0 0 24 24">
+					<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.75 6.75L19.25 12L13.75 17.25"/>
+					<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 12H4.75"/>
+				</svg>
+      </button>
+    
+	    <button class="icon-btn icon-btn-color col-auto" onclick="location.href='#contact'">
+				<svg class="icon-svg" width="56" height="56" fill="none" viewBox="0 0 24 24">
+				  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 13.75L12 19.25L6.75 13.75"/>
+				  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 18.25V4.75"/>
+				</svg>
+	    </button>
+	  </div>
 	</section>
-	<section id="contact">
+
+
+	<section class="container" id="contact">
 		<h2 class="subtitle">GET IN TOUCH</h2>
 		<h1 class="title">Contact Me</h1>
-		<div id="socials-container">
+		<div class="socials-container">
 	      <button
 	        class="icon-btn icon-btn-color"
 	        onclick="location.href='mailto:katpasalo@gmail.com'"
@@ -104,5 +107,8 @@
 	      </button>
       </div>
 	</section>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
